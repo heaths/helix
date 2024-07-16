@@ -1,0 +1,15 @@
+theme = "darcula"
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[[language]]
+name = "TOML"
+formatter = { command = "taplo", args = ["fmt", "-"] }
+
+# LSP installation
+# https://github.com/helix-editor/helix/wiki/Language-Server-Configurations
