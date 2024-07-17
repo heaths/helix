@@ -2,6 +2,20 @@
 
 My configuration for the [Helix editor][website].
 
+## Clone
+
+### Linux and macOS
+
+```bash
+git clone https://github.com/heaths/helix ~/.config/helix
+```
+
+### Windows
+
+```powershell
+git clone 'https://github.com/heaths/helix' $env:APPDATA/helix
+```
+
 ## Installation
 
 See [Installing Helix](https://docs.helix-editor.com/install.html) for more options.
