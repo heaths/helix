@@ -1,0 +1,6 @@
+inherits = "darcula"
+
+"ui.background" = {}
+"ui.linenr" = { fg = "grey03" }
+"ui.linenr.selected" = { fg = "darkgreen", modifiers = ["bold"] }
+"ui.gutter" = {}
