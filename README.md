@@ -127,9 +127,6 @@ npm install -g typescript typescript-language-server
 npm install -g @typespec/compiler
 hx -g fetch
 hx -g build
-# Work around https://github.com/helix-editor/helix/issues/11378
-mkdir ~/.config/helix/runtime/queries
-ln -rsT ~/.config/helix/runtime/grammars/sources/typespec/queries/ ~/.config/helix/runtime/queries/typespec
 ```
 
 ### YAML
