@@ -13,6 +13,10 @@ auto-format = true
 formatter = { command = "goimports" }
 
 [[language]]
+name = "log"
+soft-wrap = { enable = true }
+
+[[language]]
 name = "markdown"
 soft-wrap = { enable = true }
 
@@ -27,7 +31,7 @@ formatter = { command = "taplo", args = ["fmt", "-"] }
 [[language]]
 name = "typespec"
 language-id = "typespec"
-scope = "source.tsp"
+scope = "source.typespec"
 injection-regex = "(tsp|typespec)"
 file-types = ["tsp"]
 roots = ["tspconfig.yaml"]
