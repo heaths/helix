@@ -5,7 +5,7 @@ use-grammars = { only = ["typespec"] }
 
 [[grammar]]
 name = "typespec"
-source = { git = "https://github.com/heaths/tree-sitter-typespec", rev = "79bedf2bb3e35eaa61c40c1fc6e9aa9a1a2e175c" }
+source = { git = "https://github.com/heaths/tree-sitter-typespec", rev = "5b29d7556ec19ae83c358a0425236815ba457858" }
 
 [[language]]
 name = "go"
