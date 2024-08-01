@@ -30,16 +30,21 @@
 ; Functions
 
 [
+  (decorator)
   (decorator_declaration_statement)
   (function_declaration_statement)
   (operation_statement)
 ] @function.around
 
 (function_parameter_list
-  (function_parameter) @parameter.inside)* @function.inside
+  (function_parameter)? @parameter.inside)* @function.inside
+
+(decorator_arguments
+  (expression_list
+    (_) @parameter.inside)*) @function.inside
 
 (operation_arguments
-  (model_property)* @parameter.inside) @function.inside
+  (model_property)? @parameter.inside)* @function.inside
 
 (template_parameters
   (template_parameter_list
