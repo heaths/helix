@@ -103,6 +103,12 @@ brew install marksman
 scoop install marksman
 ```
 
+### Python
+
+```bash
+npm install -g pyright
+```
+
 ### Rust
 
 ```bash
