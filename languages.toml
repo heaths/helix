@@ -1,5 +1,5 @@
 # LSP installation
-# https://github.com/helix-editor/helix/wiki/Language-Server-Conuigurations
+# https://github.com/helix-editor/helix/wiki/Language-Server-Configurations
 
 use-grammars = { only = ["typespec"] }
 
