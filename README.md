@@ -50,6 +50,20 @@ See [Language Server Configurations](https://github.com/helix-editor/helix/wiki/
 npm i -g bash-language-server
 ```
 
+### Bicep
+
+[Install .NET](https://dot.net/download) for your platform.
+
+```bash
+gh -R Azure/bicep release download -p bicep-langserver.zip -O ~/Downloads/bicep-langserver.zip
+unzip -d ~/.cache/bicep-langserver ~/Downloads/bicep-langserver.zip
+echo << 'EOF' > ~/.local/bin/bicep-langserver
+#!/usr/bin/env bash
+dotnet ~/.cache/bicep-langserver/Bicep.LangServer.dll
+EOF
+chmod +x ~/.local/bin/bicep-langserver
+```
+
 ### Docker
 
 ```bash
