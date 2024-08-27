@@ -34,6 +34,12 @@ sudo apt install helix
 winget install -e Helix.Helix
 ```
 
+Install `xclip` in WSL2 on Windows 11 to use the system clipboard:
+
+```bash
+sudo apt install xclip
+```
+
 ### macOS
 
 ```bash
