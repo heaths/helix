@@ -136,6 +136,11 @@ npm install -g pyright
 rustup component add clippy rust-analyzer
 ```
 
+### Swift
+
+Included with Xcode, but also available from <https://www.swift.org/install/>.
+As of 6.0, `swift format` is available globally.
+
 ### TOML
 
 ```bash
