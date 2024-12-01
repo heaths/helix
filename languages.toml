@@ -49,6 +49,16 @@ block-comment-tokens = { start = "/*", end = "*/" }
 indent = { tab-width = 2, unit = "  " }
 language-servers = ["typespec"]
 
+[[language]]
+name = "xml"
+file-types = [
+  "svg",
+  "xml",
+  "xsd",
+  "xsl",
+  "xslt",
+]
+
 [language-server.rust-analyzer.config]
 check.command = "clippy"
 checkOnSave.enable = true
