@@ -63,7 +63,7 @@ npm i -g bash-language-server
 ```bash
 gh -R Azure/bicep release download -p bicep-langserver.zip -O ~/Downloads/bicep-langserver.zip
 unzip -d ~/.cache/bicep-langserver ~/Downloads/bicep-langserver.zip
-echo << 'EOF' > ~/.local/bin/bicep-langserver
+cat <<'EOF' > ~/.local/bin/bicep-langserver
 #!/usr/bin/env bash
 dotnet ~/.cache/bicep-langserver/Bicep.LangServer.dll
 EOF
