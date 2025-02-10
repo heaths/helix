@@ -12,3 +12,7 @@ display-inlay-hints = true
 
 [editor.indent-guides]
 render = true
+
+[editor.smart-tab]
+# https://github.com/helix-editor/helix/issues/7804
+enable = false
