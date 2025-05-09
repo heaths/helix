@@ -10,6 +10,7 @@ source = { git = "https://github.com/happenslol/tree-sitter-typespec", rev = "af
 [[language]]
 name = "go"
 auto-format = true
+language-servers = ["gopls", "golangci-lint2-langserver"]
 formatter = { command = "goimports" }
 
 [[language]]
@@ -57,6 +58,19 @@ file-types = [
   "xsd",
   "xsl",
   "xslt",
+]
+
+[language-server.golangci-lint2-langserver]
+command = "golangci-lint-langserver"
+
+[language-server.golangci-lint2-langserver.config]
+command = [
+  "golangci-lint",
+  "run",
+  "--output.json.path",
+  "stdout",
+  "--show-stats=false",
+  "--issues-exit-code=1",
 ]
 
 [language-server.rust-analyzer.config]
