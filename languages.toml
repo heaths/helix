@@ -1,12 +1,6 @@
 # LSP installation
 # https://github.com/helix-editor/helix/wiki/Language-Server-Configurations
 
-use-grammars = { only = ["typespec"] }
-
-[[grammar]]
-name = "typespec"
-source = { git = "https://github.com/happenslol/tree-sitter-typespec", rev = "af7a97eea5d4c62473b29655a238d4f4e055798b" }
-
 [[language]]
 name = "go"
 auto-format = true
@@ -39,16 +33,7 @@ formatter = { command = "taplo", args = ["fmt", "-"] }
 
 [[language]]
 name = "typespec"
-language-id = "typespec"
-scope = "source.typespec"
-injection-regex = "(tsp|typespec)"
-file-types = ["tsp"]
-roots = ["tspconfig.yaml"]
-auto-format = true
-comment-token = "//"
-block-comment-tokens = { start = "/*", end = "*/" }
 indent = { tab-width = 2, unit = "  " }
-language-servers = ["typespec"]
 
 [[language]]
 name = "xml"
@@ -77,6 +62,9 @@ command = [
 check.command = "clippy"
 checkOnSave.enable = true
 
-[language-server.typespec]
-command = "tsp-server"
-args = ["--stdio"]
+[language-server.yaml-language-server.config.yaml]
+format = { enable = true }
+validation = true
+
+[language-server.yaml-language-server.config.yaml.schemas]
+"https://raw.githubusercontent.com/microsoft/azure-pipelines-vscode/master/service-schema.json" = "eng/**/*.{yml,yaml}"
