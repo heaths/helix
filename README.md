@@ -167,5 +167,9 @@ hx -g build
 npm i -g yaml-language-server@next
 ```
 
+### Zig
+
+Download version of `zls` compatible with `zig version` into `$PATH$` from <https://zigtools.org/zls/install/>.
+
 [docs]: https://docs.helix-editor.com/
 [website]: https://helix-editor.com/
