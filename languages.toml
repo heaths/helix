@@ -73,6 +73,9 @@ command = [
   "--issues-exit-code=1",
 ]
 
+[language-server.vscode-json-language-server.config]
+format.keepLines = true
+
 [language-server.rust-analyzer.config]
 check.command = "clippy"
 checkOnSave.enable = true
